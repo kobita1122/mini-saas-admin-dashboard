@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini SaaS Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mini SaaS Admin Dashboard</h1>
+
+<nav>
+  <button onclick="show('overview')">Overview</button>
+  <button onclick="show('users')">Users</button>
+  <button onclick="show('billing')">Billing</button>
+  <button onclick="show('logs')">Logs</button>
+</nav>
+
+<section id="overview" class="page">
+  <h2>Overview</h2>
+  <p>Status: Running</p>
+</section>
+
+<section id="users" class="page" style="display:none;">
+  <h2>Users</h2>
+  <ul>
+    <li>Admin</li>
+    <li>Manager</li>
+    <li>User</li>
+  </ul>
+</section>
+
+<section id="billing" class="page" style="display:none;">
+  <h2>Billing</h2>
+  <p>Monthly Revenue: $1,250</p>
+</section>
+
+<section id="logs" class="page" style="display:none;">
+  <h2>System Logs</h2>
+  <p>No critical issues</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
